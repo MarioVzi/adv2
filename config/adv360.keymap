@@ -43,12 +43,6 @@
             bindings = <&none &kp LS(I) &kp C &kp H &kp SPACE &kp L &kp I &kp E &kp B &kp E &kp SPACE &kp D &kp I &kp C &kp H &kp EXCL>;
             label = "TEST";
         };
-        terminal: terminal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp>;
-            label = "TERMINAL";
-        };
         alttab: alttab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
