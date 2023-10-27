@@ -34,13 +34,13 @@
         taskmanager: taskmanager {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp R>;
+            bindings = <&sk LEFT_WIN &kp R>;
             label = "TASKMANAGER";
         };
         test: test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(I) &kp C &kp H &kp SPACE &kp L &kp I &kp E &kp B &kp E &kp SPACE &kp D &kp I &kp C &kp H &kp EXCL>;
+            bindings = <&kp LS(I) &kp C &kp H>;
             label = "TEST";
         };
         alttab: alttab {
