@@ -43,6 +43,21 @@
             bindings = <&kp LEFT_ALT &kp TAB>;
             label = "ALTTAB";
         };
+        taskmanager: taskmanager {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp DELETE>;
+            label = "TASKMANAGER";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        taskmanager {
+            bindings = <&taskmanager>;
+            key-positions = <32 41>;
+        };
     };
 
     keymap {
