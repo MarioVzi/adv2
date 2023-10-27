@@ -34,14 +34,13 @@
         test: test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&test>, <&macro_press>, <&kp M &kp A &kp R &kp I &kp O>;
-
+            bindings = <&kp M &kp A &kp R &kp I &kp O>;
             label = "TEST";
         };
         altTab: altTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&altTab &kp LEFT_ALT &kp TAB>;
+            bindings = <&kp LEFT_ALT &kp TAB>;
             label = "ALTTAB";
         };
     };
@@ -51,11 +50,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5  &tog 1                                                   &mo 3      &kp N6     &kp N7     &kp N8  &kp N9     &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W      &kp E     &kp R     &kp T   &none                                                    &none      &kp Z      &kp U      &kp I   &kp O      &test     &altTab
-&kp BSLH   &kp ESC    &kp A      &kp S     &kp D     &kp F   &kp G      &none     &kp LCTRL      &kp LALT  &kp LGUI   &kp RCTRL  &none      &kp H      &kp J   &kp K      &kp L     &kp SEMI
-&kp M      &kp LSHFT  &kp Y      &kp X     &kp C     &kp V                        &kp B          &kp HOME                        &kp PG_UP  &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH
-&kp RSHFT  &mo 2      &kp GRAVE  &kp CAPS  &kp LEFT          &kp RIGHT  &kp BSPC  &kp DEL        &kp END   &kp PG_DN  &kp ENTER             &kp SPACE  &kp UP  &kp DOWN   &kp LBKT  &kp RBKT
+&kp EQUAL   &kp N1     &kp N2     &kp N3    &kp N4    &kp N5  &tog 1                                                   &mo 3      &kp N6     &kp N7     &kp N8  &kp N9     &kp N0    &kp MINUS
+&kp TAB     &kp Q      &kp W      &kp E     &kp R     &kp T   &none                                                    &none      &kp Z      &kp U      &kp I   &kp O      &test     &altTab
+&kp ESCAPE  &kp A      &kp S      &kp D     &kp F     &kp G   &kp G      &none     &kp LCTRL      &kp LALT  &kp LGUI   &kp RCTRL  &none      &kp H      &kp J   &kp K      &kp L     &kp SEMI
+&kp M       &kp LSHFT  &kp Y      &kp X     &kp C     &kp V                        &kp B          &kp HOME                        &kp PG_UP  &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH
+&kp RSHFT   &mo 2      &kp GRAVE  &kp CAPS  &kp LEFT          &kp RIGHT  &kp BSPC  &kp DEL        &kp END   &kp PG_DN  &kp ENTER             &kp SPACE  &kp UP  &kp DOWN   &kp LBKT  &kp RBKT
             >;
         };
 
