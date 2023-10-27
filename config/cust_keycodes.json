@@ -1,1 +1,19 @@
-[]
+[
+	{
+		"names": [
+			"&macro_test1"
+		],
+		"description": "&macro_test1",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	}
+]
